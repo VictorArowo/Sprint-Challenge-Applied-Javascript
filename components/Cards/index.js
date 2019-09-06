@@ -30,6 +30,7 @@ axios.get("https://lambda-times-backend.herokuapp.com/articles")
             let currentArray = cardArrays[0][`${elem}`]
             currentArray.forEach(item => {
                 let card = articleCreator(item);
+                card.setAttribute("data-category", elem);
                 document.querySelector(".cards-container").append(card);
             })
         })
