@@ -47,11 +47,19 @@ carouselCreator = () => {
   let index = 0;
   images[0].style.display = "block"
   rightButton.addEventListener("click", () => {
-    // debugger;
     images.forEach(img => img.style.display = "none");
     let currentIndex = (index++) % 4;
     images[currentIndex].style.display = "block";
-  })
+  });
+
+  leftButton.addEventListener("click", () => {
+    images.forEach(img => img.style.display = "none");
+    // debugger;
+    --index;
+    if (index < 0) index = 3;
+    console.log(index);
+    images[index].style.display = "block";
+  });
 
 
   return carousel;
