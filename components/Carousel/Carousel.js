@@ -54,7 +54,6 @@ carouselCreator = () => {
 
   leftButton.addEventListener("click", () => {
     images.forEach(img => img.style.display = "none");
-    // debugger;
     --index;
     if (index < 0) index = 3;
     console.log(index);
