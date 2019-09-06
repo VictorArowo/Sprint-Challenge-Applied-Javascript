@@ -17,3 +17,44 @@
     <div class="right-button"> > </div>
   </div>
 */
+
+carouselCreator = () => {
+  const carousel = document.createElement("div");
+  const leftButton = document.createElement("div");
+  const img1 = document.createElement("img");
+  const img2 = document.createElement("img");
+  const img3 = document.createElement("img");
+  const img4 = document.createElement("img");
+  const rightButton = document.createElement("div");
+
+  img1.setAttribute("src", "./assets/carousel/mountains.jpeg");
+  img2.setAttribute("src", "./assets/carousel/computer.jpeg");
+  img3.setAttribute("src", "./assets/carousel/trees.jpeg");
+  img4.setAttribute("src", "./assets/carousel/turntable.jpeg" );
+
+  carousel.classList.add("carousel");
+  leftButton.classList.add("left-button");
+  rightButton.classList.add("right-button");
+
+  carousel.append(leftButton);
+  carousel.append(img1);
+  carousel.append(img2);
+  carousel.append(img3);
+  carousel.append(img4);
+  carousel.append(rightButton);
+
+  let images = [img1, img2, img3, img4]
+  let index = 0;
+
+  rightButton.addEventListener("click", () => {
+    debugger;
+    images.forEach(img => img.style.display = "none");
+    let currentIndex = (index++) % 4;
+    images[currentIndex].style.display = "block";
+  })
+
+
+  return carousel;
+}
+
+document.querySelector(".carousel-container").append(carouselCreator());
