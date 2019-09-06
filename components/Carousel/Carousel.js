@@ -57,7 +57,7 @@ carouselCreator = () => {
     --index;
     if (index < 0) index = 3;
     console.log(index);
-    images[index].style.display = "block";
+    images[index%4].style.display = "block";
   });
 
 
