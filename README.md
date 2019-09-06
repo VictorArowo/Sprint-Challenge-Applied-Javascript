@@ -30,13 +30,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+DOM (Document Object Model) is the representation of the objects that comprise the structure and content of a web page. It is an API for a webpage through which programs are able to change the structure, style and content of  a webpage.
+
+
 2. What is an event?
+
+Events are things that occur when there is a change in the state of any component of the webpage. Events occur when the browser or the user manipulates the webpage in any way.
+
 
 3. What is an event listener?
 
+- An event listener is a function that is constantly listening for the occurence of a particular event. Event listeners take in two arguments - the event and a callback. It constantly listens for the event passed in, and once it happens, it executes the callback.
+
+
 4. Why would we convert a NodeList into an Array?
 
+- Due to the fact that a node list is an array-like structure and not an array, it does not have access to the inbuilt array methods (map, filter, reduce,...,etc.). We convert node lists to array when we want to manipulate the node lists using these array methods.
+
+
 5. What is a component?
+
+A compoenent is a section of code which essentially creates a portion of the DOM. All the logic and HTML for that section of the DOM resides in the component.
 
 ### Git Set up
 
@@ -61,10 +75,10 @@ Your finished project must include all of the following requirements:
 
 Your stretch challenge is to write the functionality of a `Carousel` component. This is an advanced challenge, so you are not expected to be able to complete it. If you begin and don't finish, you should still submit with what you have. This is going to be a bit different because you are going to need to create some advanced functionality for the carousel. There is no need to request data for this exercise.
 
-* [ ] Complete the carousel functionality in `Carousel.js`
+* [x] Complete the carousel functionality in `Carousel.js`
 
-* [ ] If you complete the Carousel, add functionality so that the carousel slides when the buttons are pressed instead of just appearing.
+* [x] If you complete the Carousel, add functionality so that the carousel slides when the buttons are pressed instead of just appearing.
 
-* [ ] Create an 'infinite loop' carousel. In which as long as you click on an arrow, the array of images will loop over itself.
+* [x] Create an 'infinite loop' carousel. In which as long as you click on an arrow, the array of images will loop over itself.
 
-* [ ] If you have finished the above, research `data attributes`. Implement data attributes within your tabs as well as your cards. Give the tabs functionality so that when they are clicked they filter the cards to only display the cards that contain that topic.
+* [x] If you have finished the above, research `data attributes`. Implement data attributes within your tabs as well as your cards. Give the tabs functionality so that when they are clicked they filter the cards to only display the cards that contain that topic.
