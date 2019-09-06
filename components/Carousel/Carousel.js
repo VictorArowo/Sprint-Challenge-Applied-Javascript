@@ -45,7 +45,7 @@ carouselCreator = () => {
 
   let images = [img1, img2, img3, img4]
   let index = 0;
-
+  images[0].style.display = "block"
   rightButton.addEventListener("click", () => {
     // debugger;
     images.forEach(img => img.style.display = "none");
