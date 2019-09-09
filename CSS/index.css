@@ -54,6 +54,8 @@ body {
   position: fixed;
   height: 44px;
   background-color: #333;
+  z-index: 1;
+
 }
 .top-bar .container {
   width: 100%;
@@ -124,6 +126,7 @@ body {
   height: 120px;
   margin-top: 44px;
   padding-bottom: 15px;
+
 }
 @media (min-width: 1280px) {
   .header {
